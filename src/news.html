@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Document</title>
+</head>
+<body>
+ <section class=" grid w-11/12 mx-auto h-fit mt-16 gap-10 ">
+ 
+    <div class="grid h-fit w-full gap-3"> 
+        <div class=" flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-red-500 "></div>
+            <div class="text-[19px] ">Featured updates</div>
+        </div>
+        <div class="flex text-5xl w-fit">On the move: our latest news</div>
+    </div>
+    <div class="grid w-11/12 mx-auto items-center  gap-10  ">
+        <div id="news-conetet" class="flex flex-col-3 flex-wrap  gap-10  justify-center">
+        </div>
+        <div class=" flex gap-2 text-[20px] bg-black text-white w-fit p-3 rounded-full ml-[870px] ">
+            <div>Discover more updates</div>
+            <div class=" flex  "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M4 11v2h12l-5.5 5.5l1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5L16 11z"/></svg></div>
+        </div>
+    
+
+    </div>
+   
+  
+ </section>
+ <script>
+    const news= document.getElementById("news-conetet");
+    const newsArr=[
+        {
+            img:`https://img.freepik.com/free-photo/smiling-man-studying-holding-notebooks-looking-happy-standing-blue-background_1258-65332.jpg`,
+            type: `News` ,
+            date:`July 30, 2023`,
+            title: `Partou and Move enter mobile partnership`,
+            subtittle:`From Al to Ul: how does it work? Our designers explored Al tool Midjourney and its applicability within our field. In this blogpost we share the team's findings and our  vision on tools like these.`
+   
+        },
+        {
+            img:`https://img.freepik.com/free-photo/portrait-smiling-casual-girl-student-with-backpack-writing-notepad-while-standing-with-books-isolated-white-wall_231208-1179.jpg`,
+            type: `Study` ,
+            date:`July 30, 2023`,
+            title: `Partou and Move enter mobile partnership`,
+            subtittle:`From Al to Ul: how does it work? Our designers explored Al tool Midjourney and its applicability within our field. In this blogpost we share the team's findings and our  vision on tools like these.`
+   
+        },
+        {
+            img:`https://delivery-cqucontenthub.stylelabs.cloud/api/public/content/mature-age-student-banner-1920w.jpg?v=71ae1393&t=w960HighCompressed`,
+            type: `News` ,
+            date:`July 30, 2023`,
+            title: `Partou and Move enter mobile partnership`,
+            subtittle:`From Al to Ul: how does it work? Our designers explored Al tool Midjourney and its applicability within our field. In this blogpost we share the team's findings and our  vision on tools like these.`
+   
+        },
+        
+        
+    ];
+    newsArr.map((val,index)=>{
+        news.innerHTML+=`  <div class="bg-white w-[350px] rounded-3xl  ">
+                <div class="grid w-fit h-fit gap-2 ">
+                    <div class="relative rounded-3xl">
+                        <img class="rounded-t-3xl h-[250px] object-cover" src="${val.img}" alt="Image" class="w-full  h-[400px]">
+                        <div class=" rounded-3xl absolute inset-0 flex  mt-3  bg-opacity-50 gap-[3px] rounded-full items-center bg-white justify-center opacity-90 w-fit h-fit ml-2 px-3 py-2">
+                            <div class="w-[5px] h-[5px] bg-red-500 rounded-full items-center flex justify-center"></div>
+                          <p class=" text-xl font-bold text-[10px]">${val.type}</p>
+                        </div>
+                      </div>
+                      <div class=" flex items-end  p-5 gap-2 flex w-full ">
+                        <div class="grid w-full gap-2">
+                                <div class="text-gray-400 text-[12px] ">${val.date}</div>
+                                <div class="text-[20px] font-semibold leading-[1.2]">${val.title}</div>
+                                <div class="text-[14px]  text-gray-600 h-[150px] ">${val.subtittle}</div>
+                        </div>
+                        <div class=" grid   rounded-full p-[6px] border-2 w-fit h-fit "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 11v2h12l-5.5 5.5l1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5L16 11z"/></svg></div>
+                        
+                      </div>
+                   
+                </div>
+               
+            </div>
+        `
+    });
+ </script>
+    
+</body>
+</html>

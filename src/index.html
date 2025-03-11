@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <style>
               html {
             scroll-behavior: smooth;
@@ -60,7 +61,9 @@
     </style>
     <head>
         <body class="grid  font-popp-ins   "> 
+
           <header>
+            
            <div class="shadow-lg fixed top-0 z-50 text-[20px] bg-white w-screen">
                 <nav class="w-full  flex flex-row h-[80px] justify-between gap-10 px-20 text-black p-7 s-2 items-center "> <!--navigation bar-->
             
@@ -68,28 +71,41 @@
                     <div class="flex gap-10">
                       <ul class="grid  group">
                         <Button class="flex justify-between items-center">Course<svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
-                        <ul class="absolute grid grid-flow-col grid-rows-3 gap-2 p-2 left-[290px] mt-[50px] w-[600px] h-fit bg-white shadow-md rounded-lg opacity-0 invisible hover:rounded-md  group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Science</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Management</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Technology</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Education</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Engineering</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Health</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 whitespace-nowrap ">Social Science</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Law</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Agriculture</a></li>
-                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Forestry</a></li>
+                        <ul class="absolute grid bg-white grid-flow-col grid-rows-3 gap-2 p-2 left-[290px] mt-[50px] w-[600px] h-fit shadow-md rounded-lg opacity-0 invisible hover:rounded-md  group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                          <li><a href="#" class="sub-nev">Science</a></li>
+                          <li><a href="#" class="sub-nev">Management</a></li>
+                          <li><a href="#" class="sub-nev">Technology</a></li>
+                          <li><a href="#" class="sub-nev">Education</a></li>
+                          <li><a href="#" class="sub-nev">Engineering</a></li>
+                          <li><a href="#" class="sub-nev">Health</a></li>
+                          <li><a href="#" class="sub-nev whitespace-nowrap ">Social Science</a></li>
+                          <li><a href="#" class="sub-nev">Forestry</a></li>
+                          <li><a href="#" class="sub-nev">Agriculture</a></li>
+                          <li><a href="#" class="sub-nev">Law</a></li>
                         </ul>
                       </li>
                     </ul>    
-                        <Button class="flex justify-between items-center">University Course <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
-                        <Button class="flex justify-between items-center">College<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
+                    <ul class="flex group">
+                      <Button class="flex justify-between items-center">University Course <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
+                      <ul class="absolute grid bg-white grid-flow-col grid-rows-3 gap-2 p-2 left-[430px] mt-[50px] w-fit h-fit tshadow-md rounded-lg opacity-0 invisible hover:rounded-md  group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <li><a href="#" class="sub-nev">Affiliated by TU</a></li>
+                        <li><a href="#" class="sub-nev">Affiliated by KU</a></li>
+                        <li><a href="#" class="sub-nev">Affiliated by PU</a></li>
+                       
+                      </ul>
+                    </ul>
+                    <ul>
+                      <Button class="flex justify-between items-center">College<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
+                      
+                    </ul>
+                        
+                       
                         <Button>News </Button>
                     </div>
                     <div></div>
                     <div class="flex gap-5 text-[18px]">
                         <a  class=" font-semibold  p-2 w-fit hover:text-[#1791c8] cursor-pointer">Log in</a>
-                        <button class="border-2 rounded-lg p-2 px-6 bg-[#1791c8]  text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 hover:scale-110 hover:shadow-lg transition-all duration-300">Sign up</button>
+                        <button class="border-2 rounded-lg p-2 px-6 bg-[#1791c8]   bg-gradient-to-r from-blue-500 via-blue-800 to-indigo-900 text-white hover:bg-black focus:outline-none  focus:ring-opacity-75 hover:scale-90 hover:shadow-lg transition-all duration-300">Sign up</button>
                     </div>
                 </nav> 
                
@@ -97,11 +113,11 @@
           </header>
 
          
-<div class="bg-white">
-            <div class="grid grid-cols-2 h-[665px]   w-10/12 mx-auto bg-white"> <!--first page-->
+<section class="bg-white  h-screen w-full">
+            <div class="grid grid-cols-2   w-10/12 mx-auto bg-white"> <!--first page-->
                 <div id="left-box" class="h-full  mt-[40px] grid place-content-center gap-14 animate-left   ">
                     <div class=" flex  text-6xl  font-semibold font-[Yu Gothic Medium]">Find All Of The Best Colleges & Courses</div>
-                    <button class=" flex flex-row items-center w-fit    border-2 rounded-lg p-2 px-6 bg-[#1791c8]  text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 hover:scale-110 hover:shadow-lg transition-all duration-300 ">Top Courses Available <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"/></svg></button>
+                    <button class=" flex flex-row items-center w-fit    border-2 rounded-lg p-2 px-6 bg-[#1791c8]  text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 hover:scale-90 hover:shadow-lg transition-all duration-300 ">Top Courses Available <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"/></svg></button>
                    
                 </div>
                 <div id="right-box" class="animate-right mt-[150px]  ">
@@ -110,38 +126,39 @@
 
 
             </div>
-</div>
-            <div class="relative h-fit md:h-[170px] w-full bg-gradient-to-r  from-indigo-900 via-indigo-800 to-indigo-900"><!--counting section-->
-                <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-indigo-800 to-indigo-900 opacity-20"></div>
-              
-                <div class="relative  flex flex-col  items-center justify-around h-full px-4 md:px-6 lg:px-8">
-              
-                  <div class="text-center items-center mt-2 md:text-left mb-4 md:mb-0">
-                    <p class="text-white text-xl md:text-2xl font-semibold font-[arial] tracking-wide ">NEPAL'S ACTIVE EDUCATION COMMUNITY</p>
-                  </div>
-              
-                  <div class="flex  space-x-24 md:space-x-24 items-center">
-                    <div class="text-center flex gap-3 flex-col">
-                        <div class="flex flex-row gap-3 items-center">
-                           <div class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></div> <p id="counter" class="text-white text-4xl md:text-2xl font-bold">0</p><p class="text-2xl text-white">+</p>
-                        </div>
-                        <p class="text-gray-400 text-sm md:text-base">COLLEGE IN NEPAL</p>
-                    </div>
-                    <div class="text-center flex gap-3 flex-col">
-                        <div class="flex flex-row gap-3 items-center">
-                      <div class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M2.5 6L8 4l5.5 2L11 7.5V9s-.667-.5-3-.5S5 9 5 9V7.5zm0 0v4"/><path d="M11 8.5v.889c0 1.718-1.343 3.111-3 3.111s-3-1.393-3-3.111V8.5m10.318 2.53s.485-.353 2.182-.353s2.182.352 2.182.352m-4.364 0V10L13.5 9l4-1.5l4 1.5l-1.818 1v1.03m-4.364 0v.288a2.182 2.182 0 1 0 4.364 0v-.289M4.385 15.926c-.943.527-3.416 1.602-1.91 2.947C3.211 19.53 4.03 20 5.061 20h5.878c1.03 0 1.85-.47 2.586-1.127c1.506-1.345-.967-2.42-1.91-2.947c-2.212-1.235-5.018-1.235-7.23 0M16 20h3.705c.773 0 1.387-.376 1.939-.902c1.13-1.076-.725-1.936-1.432-2.357A5.34 5.34 0 0 0 16 16.214"/></g></svg></div><p id="counterStudent" class="text-white text-4xl md:text-2xl font-bold">0</p><p class="text-2xl text-white"> THOUSAND +</p>
+            <div class="relative h-fit md:h-[150px] w-full bg-black  bg-gradient-to-r from-blue-500 via-blue-800 to-indigo-900 mt-24 w-full "><!--counting section-->
+              <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-indigo-800 to-indigo-900 opacity-20"></div>
+            
+              <div class="relative  flex flex-col  items-center justify-around h-full px-4 md:px-6 lg:px-8">
+            
+                <div class="text-center items-center mt-2 md:text-left mb-4 md:mb-0">
+                  <p class="text-white text-xl md:text-2xl font-semibold font-[arial] tracking-wide ">NEPAL'S ACTIVE EDUCATION COMMUNITY</p>
+                </div>
+            
+                <div class="flex  gap-44 items-center">
+                  <div class="text-center flex gap-3 flex-col ">
+                      <div class="flex flex-row gap-3 items-cestnter">
+                         <div class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></div> <p id="counter" class="text-white text-4xl md:text-2xl font-bold">0</p><p class="text-2xl text-white">+</p>
                       </div>
-                      <p class="text-gray-400 text-sm md:text-base">COLLEGE STUDETN</p>
+                      <p class="text-gray-400 text-sm md:text-base">COLLEGE IN NEPAL</p>
+                  </div>
+                  <div class="text-center flex gap-3 flex-col ">
+                      <div class="flex flex-row gap-3 items-center">
+                    <div class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M2.5 6L8 4l5.5 2L11 7.5V9s-.667-.5-3-.5S5 9 5 9V7.5zm0 0v4"/><path d="M11 8.5v.889c0 1.718-1.343 3.111-3 3.111s-3-1.393-3-3.111V8.5m10.318 2.53s.485-.353 2.182-.353s2.182.352 2.182.352m-4.364 0V10L13.5 9l4-1.5l4 1.5l-1.818 1v1.03m-4.364 0v.288a2.182 2.182 0 1 0 4.364 0v-.289M4.385 15.926c-.943.527-3.416 1.602-1.91 2.947C3.211 19.53 4.03 20 5.061 20h5.878c1.03 0 1.85-.47 2.586-1.127c1.506-1.345-.967-2.42-1.91-2.947c-2.212-1.235-5.018-1.235-7.23 0M16 20h3.705c.773 0 1.387-.376 1.939-.902c1.13-1.076-.725-1.936-1.432-2.357A5.34 5.34 0 0 0 16 16.214"/></g></svg></div><p id="counterStudent" class="text-white text-4xl md:text-2xl font-bold">0</p><p class="text-2xl text-white"> THOUSAND +</p>
                     </div>
-                    <div class="text-center flex gap-3 flex-col">
-                        <div class="flex flex-row gap-3 items-center">
-                        <div class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1920 1792"><path fill="currentColor" d="m960 0l960 384v128h-128q0 26-20.5 45t-48.5 19H197q-28 0-48.5-19T128 512H0V384zM256 640h256v768h128V640h256v768h128V640h256v768h128V640h256v768h59q28 0 48.5 19t20.5 45v64H128v-64q0-26 20.5-45t48.5-19h59zm1595 960q28 0 48.5 19t20.5 45v128H0v-128q0-26 20.5-45t48.5-19z"/></svg></div><p id="counterUni" class="text-white text-4xl md:text-3xl font-bold">0+</p>
-                    </div>
-                      <p class="text-gray-400 text-sm md:text-base">UNIVERSITY</p>
-                    </div>
+                    <p class="text-gray-400 text-sm md:text-base">COLLEGE STUDETN</p>
+                  </div>
+                  <div class="text-center flex gap-3 flex-col">
+                      <div class="flex flex-row gap-3 items-center">
+                      <div class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1920 1792"><path fill="currentColor" d="m960 0l960 384v128h-128q0 26-20.5 45t-48.5 19H197q-28 0-48.5-19T128 512H0V384zM256 640h256v768h128V640h256v768h128V640h256v768h128V640h256v768h59q28 0 48.5 19t20.5 45v64H128v-64q0-26 20.5-45t48.5-19h59zm1595 960q28 0 48.5 19t20.5 45v128H0v-128q0-26 20.5-45t48.5-19z"/></svg></div><p id="counterUni" class="text-white text-4xl md:text-3xl font-bold">0+</p>
+                  </div>
+                    <p class="text-gray-400 text-sm md:text-base">UNIVERSITY</p>
                   </div>
                 </div>
               </div>
+            </div>
+  </section>
+            
 
               <!--cousers list -->
 
@@ -558,6 +575,7 @@ animateCounter("counterUni", 0, 12,2000)
 
                 
             </script>
+            
         </body>
     </head>
 </html>

@@ -8,7 +8,7 @@ const bim = document.getElementById("bim");
 
 const managem=[
 document.getElementById("mba"),
-document.getElementById("mbm"),
+document.getElementById(" mbm"),
 document.getElementById("mbs"),
 document.getElementById("mfc"),
 document.getElementById("mpa"),
@@ -35,8 +35,6 @@ mainManage.addEventListener("mouseenter", () => {
     mpa.classList.replace("bg-purple-700", "bg-purple-900","shadow-gray-500","shadow-md",); // Change class
     mps.classList.replace("bg-purple-700", "bg-purple-900","shadow-gray-500","shadow-md",); // Change class
     mpm.classList.replace("bg-purple-700", "bg-purple-900","shadow-gray-500","shadow-md",); // Change class
-
-
    mppa.classList.replace("bg-purple-700", "bg-purple-900","shadow-gray-500","shadow-md",); // Change class
 
 
