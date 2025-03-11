@@ -59,17 +59,29 @@
 
     </style>
     <head>
-        <body class="grid  font-poppins   "> 
+        <body class="grid  font-popp-ins   "> 
+          <header>
            <div class="shadow-lg fixed top-0 z-50 text-[20px] bg-white w-screen">
                 <nav class="w-full  flex flex-row h-[80px] justify-between gap-10 px-20 text-black p-7 s-2 items-center "> <!--navigation bar-->
             
                     <div class="  "><img class="h-[80px] w-[80px]" src="imagesPage/logo.png"></div>
-                    <div class="flex gap-10">    
+                    <div class="flex gap-10">
+                      <ul class="grid  group">
                         <Button class="flex justify-between items-center">Course<svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
+                        <ul class="absolute left-[290px] mt-[40px] w-40 bg-white shadow-md rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Web Design</a></li>
+                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">SEO</a></li>
+                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Marketing</a></li>
+                        </ul>
+                      </li>
+                
+                    </ul>    
+                        
                         <Button class="flex justify-between items-center">University Course <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
                         <Button class="flex justify-between items-center">College<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l5-5H7z"/></svg></Button>
                         <Button>News </Button>
                     </div>
+                    <div></div>
                     <div class="flex gap-5 text-[18px]">
                         <a  class=" font-semibold  p-2 w-fit hover:text-[#1791c8] cursor-pointer">Log in</a>
                         <button class="border-2 rounded-lg p-2 px-6 bg-[#1791c8]  text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 hover:scale-110 hover:shadow-lg transition-all duration-300">Sign up</button>
@@ -77,6 +89,7 @@
                 </nav> 
                
            </div > 
+          </header>
 
          
 <div class="bg-white">
